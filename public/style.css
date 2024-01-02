@@ -81,3 +81,39 @@ img:hover{
     display: flex;
     margin-top: 5px;
 }
+.icons:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.certH1{
+    color: black;
+    margin-top: 30px;
+}
+.icons-footer{
+    padding: 10px;
+    margin-right: 5px;
+    display: flex;
+    margin-top: 5px;
+}
+.icons-footer:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+form-control{
+    padding: 5px;
+}
+.button{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#certifications{
+    padding-bottom: 20px;
+}
+
+.sub-title{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    align-items: center;
+    align-content: center;
+}
