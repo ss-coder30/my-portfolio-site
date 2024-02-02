@@ -386,7 +386,7 @@
               </div>
 
             <div class="contact-right">
-              <form action="/submit-form" method="post">
+              <form name="submit-to-google-sheet" action="/submit-form" method="post">
                 <!-- Your existing form fields here -->
                 <input type="text" name="name" class="form-control" placeholder="Name" aria-label="Name">
                 <input type="email" name="email" class="form-control" placeholder="Email" aria-label="Email">
@@ -401,6 +401,18 @@
         </div>
       </div>
     </section>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzhtfmDgdiqcCsKfmbdFMv87oNq3s2_0Ygu6mIe3c06-bNFE0AIdttj3xmfRYJKk685Pw/exec'
+      const form = document.forms['submit-to-google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
     
 </body>
 </html>
