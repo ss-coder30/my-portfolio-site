@@ -117,3 +117,10 @@ form-control{
     align-items: center;
     align-content: center;
 }
+#msg{
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    display: block;
+    color: #31304D;
+}
